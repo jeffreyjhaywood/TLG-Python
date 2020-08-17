@@ -29,79 +29,78 @@ inventory = []
 #a dictionary linking a room to other rooms
 ## A dictionary linking a room to other rooms
 rooms = {
-        past {
-            'Hall' : { 
-                  'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
-                },
 
-            'Kitchen' : {
-                  'north' : 'Hall',
-                  'item'  : 'monster',
-                },
-            'Dining Room' : {
-                  'west' : 'Hall',
-                  'south': 'Garden',
-                  'item' : 'potion'
-               },
-            'Garden' : {
-                  'north' : 'Dining Room'
-            },
-            'Portal Room' : {
-                'east' : 'East Portal',
-                'west' : 'West Portal'
-            }
-           },
-        present {
-            'Hall' : {
-                  'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
-                },
+    'past' : {
+        'Hall' : {
+            'south' : 'Kitchen',
+            'east'  : 'Dining Room',
+            'item'  : 'key'
+        },
+        'Kitchen' : {
+            'north' : 'Hall',
+            'item'  : 'monster',
+        },
+        'Dining Room' : {
+            'west' : 'Hall',
+            'south': 'Garden',
+            'item' : 'potion'
+        },
+        'Garden' : {
+            'north' : 'Dining Room'
+        },
+        'Portal Room' : {
+            'south' : 'East Portal',
+        }
+    },
+    'present' : {
+        'Hall' : {
+            'south' : 'Kitchen',
+            'east'  : 'Dining Room',
+            'item'  : 'key'
+        },
+        'Kitchen' : {
+            'north' : 'Hall',
+            'south' : 'Portal Room',
+            'item'  : 'monster',
+        },
+        'Dining Room' : {
+            'west' : 'Hall',
+            'south': 'Garden',
+            'item' : 'potion'
+        },
+        'Garden' : {
+            'north' : 'Dining Room'
+        },
+        'Portal Room' : {
+            'east' : 'East Portal',
+            'west' : 'West Portal'
+        }
+    },
+    'future' : {
+        'Hall' : {
+            'south' : 'Kitchen',
+            'east'  : 'Dining Room',
+            'item'  : 'key'
+        },
 
-            'Kitchen' : {
-                  'north' : 'Hall',
-                  'item'  : 'monster',
-                },
-            'Dining Room' : {
-                  'west' : 'Hall',
-                  'south': 'Garden',
-                  'item' : 'potion'
-               },
-            'Garden' : {
-                  'north' : 'Dining Room'
-            },
-            'Portal Room' : {
-                'east' : 'East Portal',
-                'west' : 'West Portal'
-            }
-            },
-        future {
-            'Hall' : {
-                  'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
-                },
-
-            'Kitchen' : {
-                  'north' : 'Hall',
-                  'item'  : 'monster',
-                },
-            'Dining Room' : {
-                  'west' : 'Hall',
-                  'south': 'Garden',
-                  'item' : 'potion'
-               },
-            'Garden' : {
-                  'north' : 'Dining Room'
-            },
-            'Portal Room' : {
-                'east' : 'East Portal',
-                'west' : 'West Portal'
-            }
-            }
-         }
+        'Kitchen' : {
+            'north' : 'Hall',
+            'item'  : 'monster',
+        },
+        'Dining Room' : {
+            'west' : 'Hall',
+            'south': 'Garden',
+            'item' : 'potion'
+        },
+        'Garden' : {
+            'north' : 'Dining Room'
+        },
+        'Portal Room' : {
+            'east' : 'East Portal',
+            'west' : 'West Portal'
+        }
+    }
+}
 
 
 #start the player in the Hall
